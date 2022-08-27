@@ -26,7 +26,7 @@ class UI {
       day.innerHTML = `
       <div class="dayInfo">
         <div class="icon">
-          <img src="../icons/${f.weather[0].icon}.png" alt="${
+          <img src="./icons/${f.weather[0].icon}.png" alt="${
         f.weather[0].main
       }" />
         </div>
@@ -54,7 +54,7 @@ class UI {
         <p class="descWeather">${weather[0].description}</p>
       </div>
       <div class="icon">
-        <img src="../icons/${weather[0].icon}.png" alt="${weather[0].main}" />
+        <img src="./icons/${weather[0].icon}.png" alt="${weather[0].main}" />
       </div>
     </header>
     <footer class="footerWeather">
