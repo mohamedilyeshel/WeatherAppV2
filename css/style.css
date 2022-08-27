@@ -1,0 +1,136 @@
+/* Reset */
+:root {
+  --backgroundColorDark: #222831;
+  --fontColor: #393e46;
+  --backgroundColorGreen: #00adb5;
+  --grayColor: #eeeeee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--fontColor);
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Input Style */
+.searchCities {
+  margin-top: 3rem;
+}
+
+.searchCities input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--grayColor);
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--fontColor);
+}
+
+.searchCities input:focus-visible {
+  outline: 1px solid var(--backgroundColorGreen);
+}
+
+.searchCities .cities .citiesList {
+  padding: 2rem;
+  font-size: 1.8rem;
+  border: 1px solid var(--grayColor);
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.searchCities .cities .citiesList:hover {
+  border-color: var(--backgroundColorGreen);
+}
+
+.searchCities .cities .citiesList .city {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.searchCities .cities .citiesList .city:hover {
+  background-color: var(--backgroundColorGreen);
+  color: white;
+}
+
+/* Current Weather */
+.currentWeather {
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--backgroundColorGreen);
+  color: white;
+  font-size: 2rem;
+  width: 60%;
+}
+
+.currentWeather .headerWeather {
+  display: grid;
+  margin-bottom: 3rem;
+  grid-template-columns: minmax(auto, 60%) 1fr;
+  align-items: center;
+}
+
+.currentWeather .headerWeather .location .title {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+}
+
+.currentWeather .headerWeather .location .descWeather {
+  font-size: 0.8em;
+}
+
+.currentWeather .headerWeather .icon {
+  width: 12rem;
+  height: 12rem;
+  margin: 0 auto;
+}
+
+.currentWeather .headerWeather .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.currentWeather .footerWeather {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(auto, 60%) 1fr;
+}
+
+.currentWeather .footerWeather .temp {
+  font-size: 4em;
+}
+
+.currentWeather .footerWeather .moreInfos .infos {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.currentWeather .footerWeather .moreInfos p.infos {
+  background-color: var(--fontColor);
+  padding: 0.3em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}

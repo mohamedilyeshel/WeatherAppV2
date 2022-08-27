@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App v2</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#" method="get" class="searchCities">
+        <input
+          type="text"
+          placeholder="Type the city name"
+          name="cityName"
+          required
+        />
+        <div class="cities"></div>
+      </form>
+      <section class="currentWeather">
+        <header class="headerWeather">
+          <div class="location">
+            <h3 class="city title">No Data</h3>
+            <h3 class="country title">No Data</h3>
+            <p class="descWeather">No Data</p>
+          </div>
+          <div class="icon">
+            <img src="./icons/unknown.png" alt="No Data" />
+          </div>
+        </header>
+        <footer class="footerWeather">
+          <p class="temp">NaN</p>
+          <div class="moreInfos">
+            <p class="infos">Details</p>
+            <div class="infos">
+              <p>Feels Like</p>
+              <p class="fellsLike">NaN</p>
+            </div>
+            <div class="infos">
+              <p>Wind</p>
+              <p class="wind">NaN</p>
+            </div>
+            <div class="infos">
+              <p>Humidity</p>
+              <p class="humidity">NaN</p>
+            </div>
+            <div class="infos">
+              <p>Pressure</p>
+              <p class="pressure">NaN</p>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script src="./js/city.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
