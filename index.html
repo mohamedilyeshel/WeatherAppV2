@@ -20,7 +20,9 @@
           name="cityName"
           required
         />
-        <div class="cities"></div>
+        <div class="cities">
+          <ul class="citiesList hide"></ul>
+        </div>
       </form>
       <section class="currentWeather">
         <header class="headerWeather">
@@ -55,6 +57,22 @@
             </div>
           </div>
         </footer>
+      </section>
+      <section class="forcastWeather">
+        <div class="days">
+          <div class="day">
+            <div class="dayInfo">
+              <div class="icon">
+                <img src="./icons/unknown.png" alt="No Data" />
+              </div>
+              <p class="dayName">No Data</p>
+            </div>
+            <div class="dayWeather">
+              <span class="descWeather">No Data</span>
+              <span class="tempWeather">NaN</span>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 

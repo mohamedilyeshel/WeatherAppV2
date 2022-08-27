@@ -33,6 +33,10 @@ ul {
   list-style: none;
 }
 
+.hide {
+  display: none;
+}
+
 /* Input Style */
 .searchCities {
   margin-top: 3rem;
@@ -129,8 +133,54 @@ ul {
 }
 
 .currentWeather .footerWeather .moreInfos p.infos {
-  background-color: var(--fontColor);
+  background-color: var(--backgroundColorDark);
   padding: 0.3em;
   font-weight: 600;
   margin-bottom: 0.3em;
+}
+
+/* ForCast Weather */
+.forcastWeather {
+  margin-bottom: 3rem;
+}
+
+.forcastWeather .day {
+  background-color: var(--backgroundColorGreen);
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forcastWeather .day:last-child {
+  margin-bottom: 0;
+}
+
+.forcastWeather .day .dayInfo {
+  display: flex;
+  align-items: center;
+}
+
+.forcastWeather .day .dayInfo .icon {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 1rem;
+}
+
+.forcastWeather .day .dayInfo .icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.forcastWeather .day .dayWeather .descWeather {
+  margin-right: 1rem;
+  color: var(--grayColor);
+}
+
+.forcastWeather .day .dayWeather .tempWeather {
+  color: var(--fontColor);
 }
